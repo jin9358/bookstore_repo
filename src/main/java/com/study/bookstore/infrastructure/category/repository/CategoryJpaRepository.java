@@ -15,6 +15,8 @@ public interface CategoryJpaRepository extends JpaRepository<CategoryJpaEntity, 
 
     boolean existsByName(String name);
 
+    long countByQuantity(int quantity);
+
     List<CategoryJpaEntity> findByNameContainsIgnoreCase(String name);
 
     // contains와 Containing 차이?
